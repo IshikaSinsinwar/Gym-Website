@@ -1,0 +1,157 @@
+ /* 2. This is CSS reset. */
+ body {
+    margin: 0px;
+    padding: 0px;
+    background: url(/img/bg.jpg) no-repeat;
+    /* 3. This is the method used to use an image as background. */
+    background-attachment: fixed;
+    /* 4.The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block. */
+    background-position: center;
+    /* 5.The background-position property sets the starting position of a background image.
+    By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+     */
+    color: white;
+    /* 12. white to improve visibility */
+    font-family: 'Roboto', sans-serif;
+    /* 30. Adding baloo bhai from google fonts, we have to add this separately on button css because they have separate default settings. */
+    font-weight: 900;
+
+
+}
+
+/* 9. Now lets add css to left */
+.left {
+    /* border: 2px solid red; */
+    /* 10. adding this to see how our divs look. I will remove them later. */
+    display: inline-block;
+    /* 13. We want to keep left right and mid at there positions and not in new lines. So i am changing it to inline block so i can adjust width etc too and they do not come in next line. */
+    position: absolute;
+    left: 60px;
+    top: 18px;
+
+
+}
+
+.left div {
+    text-align: center;
+    font-size: 12px;
+    line-height: 0px;
+    /* 31. To bring text more close to logo */
+}
+
+.left img {
+    /* 28. Targetting img in left */
+    margin: 9px 18px;
+    width: 64px;
+    filter: invert(100%);
+
+
+}
+
+.mid {
+    /* border: 2px solid green; */
+    /* 17. For centering an element using margin auto, you need to do three thing:
+    1. set display block
+    2.set width
+    3. Then margin auto; */
+    display: block;
+    width: 35%;
+    margin: 20px auto;
+    /* 18. We will adjust its position from top using margin and for left and right we will use top:20, set all these values to 20. */
+
+}
+
+.right {
+    position: absolute;
+    /* 15. To make it move according to parent tag. that is header in this case. */
+    right: 50px;
+    top: 31px;
+    /* 16. Now adjust the position using inspect element.
+    Now left is on left right is on right , time to centre the centre element. */
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    /* 14. On right too, I am doing display inline block. */
+
+
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    /* 20. To make content of list in one line, we are making display of .navbar and .navbar li as inline block */
+}
+
+.navbar li a {
+    color: white;
+    /* 21. To change the colour of navbar elements. */
+    text-decoration: none;
+    /* 22. To remove underline */
+    padding: 35px 14px;
+    /* 23. Adding padding to separate elements. */
+    font-size: 18px;
+    /* 24. Adjusting the font size */
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+    /* 25. I made class of home active as we are currently on home page. And adding styling to hover */
+}
+
+.btn {
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: grey;
+
+}
+
+.container {
+    border: 2px solid white;
+    margin: 74px 755px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+    /* 33. Now adding some css to container using inspect element */
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 382px;
+    padding: 4px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 21px;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    /* 34. Adding css to input tags */
+}
+
+.container h1 {
+    text-align: center;
+    /* 35. Center aligning heading */
+
+}
+
+.container button {
+    display: block;
+    width: 82%;
+    margin: 20px auto;
+    /* 36. to add css to button */
+}
